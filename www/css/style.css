@@ -1,0 +1,129 @@
+.no-decoration {
+	text-decoration: none;
+}
+.login-wrapper {
+	position: absolute;
+	top: 10vh;
+	text-align: center;
+	width: 100%;
+}
+.login-button {
+	width: 180px;
+}
+.title.title-left.header-item{
+	margin:0;
+	text-align:center;
+	left: 0 !important;
+	right: 10px !important;
+}
+.platform-android .action-sheet .action-sheet-title{
+	color: #666;
+}
+.platform-android .action-sheet .action-sheet-title, .platform-android .action-sheet .button{
+		text-align: center;
+		border-color: #d1d3d6;
+		color: #007AFF;
+		font-weight: 350;
+			background: #fff;
+}
+.platform-android .action-sheet .action-sheet-title{
+	color: #666;
+	background: #f1f2f3;
+}
+.row{
+		text-align: center;
+}
+.col.header{
+		margin: auto 2px auto 2px;
+		background-color: #0089BC;
+		font-size: 0.7em;
+}
+.col.body{
+	 margin: auto 2px auto 2px;
+	background-color: #fff;
+	border-bottom: 1px solid #00AEEF;
+}
+.row.header{
+		color: white;
+}
+
+.button.button-positive{
+		margin-top: 5px 5px 5px 5px;
+		background-color: #0089BC;
+		border-color: #0089BC;
+}
+
+.button.button-positive:active{
+		background-color: #00AEEF;
+}
+.button.button-positive.activated{
+		background-color: #00AEEF;
+}
+
+
+.bar .title.title-left{
+	text-align: center;
+	font-weight: 500;
+}
+
+.login-popup .popup-head {
+	display: none;
+}
+.login-popup .item-input {
+	padding: 6px;
+}
+.confirmacao-popup .popup-head{
+	 padding:0;
+}
+.confirmacao-popup h4{
+	 margin: 1px 10px 5px 10px;
+	 font-weight: 500;
+	 color: #666;
+	 border-bottom: 1px solid #aaa;
+	 padding-bottom: 5px;
+}
+
+.item-royal.text-center.menu-logo{
+		padding-top: 2px;
+		padding-left: 0;
+		padding-bottom: 5px;
+}
+
+.col-descricao{
+	border: 1px solid #eee;
+    border-radius: 8%;
+}
+.col-titulo{
+	background-color: #999;	
+}
+.col-descricao p{
+	margin: 0;
+}
+.col-titulo p{
+	margin: 0;
+	color: #fff;
+}
+.row-produto{
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 5px;
+}
+.titulo-produto{
+	color: #aaaaaa;
+	margin: 0px;
+}
+
+.aba-active{
+	border-bottom: 2px solid orange !important;
+	font-weight: bold;
+}
+#aba-descricao, #aba-especificacoes{
+	border: 1px solid #dddddd;
+	border-radius: 2%;
+}
+.abas-produto{
+	border: 0;
+}
+.tabs-striped .tab-item.tab-item-active, .tabs-striped .tab-item.active, .tabs-striped .tab-item.activated{
+	border-bottom: 2px solid orange !important;
+}

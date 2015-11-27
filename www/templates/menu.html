@@ -1,0 +1,39 @@
+<ion-side-menus enable-menu-with-back-views="false">
+	<ion-side-menu-content>
+		<ion-nav-bar class="bar-dark">
+			<ion-nav-back-button>
+			</ion-nav-back-button>
+
+			<ion-nav-buttons side="left">
+				<button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+				</button>
+			</ion-nav-buttons>
+		</ion-nav-bar>
+		<ion-nav-view name="menuContent"></ion-nav-view>
+	</ion-side-menu-content>
+
+	<ion-side-menu side="left">
+		<ion-content class="dark-bg">
+			<ion-list class="list-borderless">
+				<ion-item class="item-dark text-center menu-logo">
+					<img src="./img/logo.png">
+				</ion-item>
+				<ion-item menu-close ui-sref="app.produtos" class="item-dark">
+					Produtos
+				</ion-item>
+				<ion-item menu-close ui-sref="app.pedidos" class="item-dark">
+					Pedidos
+				</ion-item>
+				<ion-item menu-close ui-sref="app.preferencias" class="item-dark">
+					Preferências
+				</ion-item>
+				<ion-item menu-close ui-sref="app.contato" class="item-dark">
+					Contato
+				</ion-item>
+				<ion-item menu-close ng-click="showLogin()" class="item-dark">
+					Sair
+				</ion-item>
+			</ion-list>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>

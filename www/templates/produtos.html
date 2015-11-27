@@ -1,0 +1,37 @@
+<ion-view view-title="Produtos">
+	<ion-nav-buttons side="secondary">
+		<button class="button button-icon ion-android-options"  ui-sref="app.produtos"></button>
+		<button class="button button-icon ion-android-search"  ng-click="vm.showFilterBar()"></button>
+	</ion-nav-buttons>
+
+	 <ion-tabs >
+
+        <ion-tab title="Produtos">
+			  <ion-nav-view name="produtos">
+				<ion-content>
+					<ion-list>
+						<ion-item class="item item-thumbnail-left" ng-repeat="produto in vm.items" href="#/app/detalhe-produto/{{produto.id}}">
+							 <img src="{{produto.imagem.url}}">
+							 <h2>{{produto.nome}}</h2>
+							 <p>{{produto.descricao}}</p>
+							 <p>R{{produto.preco | currency}}</p>
+						</ion-item>
+					<ion-list>
+				</ion-content>
+			  </ion-nav-view>
+        </ion-tab>
+		 <ion-tab title="Categorias" >
+			  <ion-nav-view name="Categorias">
+				<ion-content>
+					<ion-list>
+						<ion-item class="item tem-icon-right" ng-repeat="categoria in categorias">
+							 <h2>{{categoria.nome}}</h2>
+								 <span class="badge badge-energized">{{categoria.produtos.quantidade}}</span>
+						</ion-item>
+					<ion-list>
+				</ion-content>
+			  </ion-nav-view>
+        </ion-tab>
+	</ion-tabs>
+
+</ion-view>

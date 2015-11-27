@@ -1,0 +1,45 @@
+<ion-view view-title="Produto">
+	<ion-content>
+		
+
+			  <img class="full-image" src="{{produto.imagem.url}}">
+			  <div class="item item-body">
+				
+				<h3 class="titulo-produto">{{produto.nome | uppercase}}</h3>
+				<h2>
+					R{{produto.preco | currency}}
+				</h2>
+				
+			<div class="item tabs tabs-secondary abas-produto">
+				<a id="aba-descricao" class="tab-item" ng-click="mostraAba(0)" href="#">
+				  Descrição
+				</a>
+				<a id="aba-especificacoes"class="tab-item" ng-click="mostraAba(1)" href="#">
+				  Especificações
+				</a>
+			  </div>
+				
+			<div class="row tab-descricao-content" ng-show="abaDescricao == true">
+				  <p>
+				 {{produto.descricao}}
+				</p>
+			 </div>
+			
+			<div class="row tab-especificacoes-content" ng-show="abaDescricao == false">
+				 <div class="row row-produto">
+				  <div class="col col-titulo">
+					<p>Tamanho</p>
+				  </div>
+				  <div class="col col-descricao">
+					<p>{{produto.especificacoes.tamanho}}</p>
+				  </div>
+				</div>
+			 </div>
+				
+				<button class="button button-block button-energized">Comprar</button>
+			  </div>
+			  
+
+		
+	</ion-content>
+</ion-view>
