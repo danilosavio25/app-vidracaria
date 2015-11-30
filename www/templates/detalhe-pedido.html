@@ -1,0 +1,15 @@
+<ion-view view-title="Pedido #{{pedido.id}}">
+					<ion-content>
+						<ion-list>
+							<ion-item class="item item-thumbnail-left" ng-repeat="produto in pedido.produtos">
+								 <img src="{{produto.imagem.url}}">
+								 <h2>{{produto.nome}}</h2>
+								 <p>Quantidade: {{produto.quantidade}}</p>
+								 <p>Preço: R{{produto.preco | currency}}</p>
+								 <h3 class="preco-custom">Total: R{{produto.preco *  produto.quantidade| currency}}</h3>
+							</ion-item>
+						<ion-list>
+					</ion-content>
+
+
+</ion-view>

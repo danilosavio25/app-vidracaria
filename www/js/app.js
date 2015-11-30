@@ -48,6 +48,33 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 			}
 		}
 	})
+	.state('app.pedidos', {
+		url: '/pedidos',
+		views: {
+			'menuContent': {
+				templateUrl: 'templates/pedidos.html',
+				controller: 'PedidosCtrl'
+			}
+		}
+	})
+	.state('app.detalhe-pedido', {
+		url: '/detalhe-pedido/:pedidoId',
+		views: {
+			'menuContent': {
+				templateUrl: 'templates/detalhe-pedido.html',
+				controller: 'DetalhePedidoCtrl'
+			}
+		}
+	})
+	.state('app.timeline-pedido', {
+		url: '/timeline-pedido',
+		views: {
+			'menuContent': {
+				templateUrl: 'templates/timeline-pedido.html',
+				controller: 'TimelinePedidoCtrl'
+			}
+		}
+	})
 	.state('app.categorias', {
 		url: '/categorias',
 		views: {

@@ -127,3 +127,85 @@
 .tabs-striped .tab-item.tab-item-active, .tabs-striped .tab-item.active, .tabs-striped .tab-item.activated{
 	border-bottom: 2px solid orange !important;
 }
+
+.item-transparent {
+    background-color: transparent !important;
+	margin-bottom: 40px;
+
+}
+.badge-timeline {
+    right: 16px !important;
+    font-weight: normal;
+    font-size: 12px;
+}
+.list-timeline .list{
+	margin-top: 15px;
+}
+.list-timeline h3 {
+    max-width: 115px;
+}
+.item-transparent:after{
+     content:"";
+    position: absolute;
+    z-index: -1;
+    top: 55px;
+    bottom: -50px;
+    left: 34px;
+    border-left: 1px solid #ccc;
+	height: 100px;
+}
+.last-item-timeline:after {
+    border-left: 0;
+}
+
+.status-completo{
+	color: green;
+}
+.status-pendente{
+	color: red;
+}
+.status-andamento{
+	color: orange;
+}
+.item-ativo-timeline{
+	border: 1px solid orange;
+	border-radius: 2%;
+}
+.item-ativo-timeline h3{
+	margin-left: 5px; 
+	margin-top: 5px; 
+}
+.item-ativo-timeline h2{
+	margin-left: 5px; 
+	margin-bottom: 5px; 
+}
+.item-inativo-timeline h3{
+	color: #aaa;
+}
+.item-inativo-timeline h2{
+	color: #bbb;
+}
+.header-rastreio{
+	text-align: center;
+}
+.item-data-pedido{
+	
+}
+.icone-item-pedido{
+	 right: 40px;
+    position: absolute;
+    top: 25px;
+	border-radius: 100%;
+}
+h3.preco-custom.ng-binding {
+    color: orange;
+}
+p.preco-custom.ng-binding {
+    color: orange;
+}
+.item.tabs.tabs-secondary.abas-produto{
+	border: 0;
+}
+h3.titulo-produto.ng-binding{
+	margin-top: 2px;
+}

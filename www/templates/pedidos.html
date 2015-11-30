@@ -1,0 +1,21 @@
+<ion-view view-title="Pedidos">
+	<ion-nav-buttons side="secondary">
+		<button class="button button-icon ion-android-options"  ui-sref="app.pedidos"></button>
+		<button class="button button-icon ion-android-search"  ng-click="vm.showFilterBar()"></button>
+	</ion-nav-buttons>
+					<ion-content>
+						<ion-list>
+							<ion-item class="item" ng-repeat="pedido in vm.items" href="#/app/detalhe-pedido/{{pedido.id}}">
+								 <h2>Pedido #{{pedido.id}}</h2>
+								 <p class="item-data-pedido">{{pedido.data}}</p>
+								 <p class="preco-custom">R{{pedido.total | currency}}</p>
+								 <a class="button button-energized icone-item-pedido"  href="#/app/timeline-pedido" > 
+									<i class="icon ion-eye"></i>
+								 </a>
+								 
+							</ion-item>
+						<ion-list>
+					</ion-content>
+
+
+</ion-view>
